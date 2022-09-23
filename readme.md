@@ -154,3 +154,5 @@ pass : nakano
 
 ---
 
+# Kendala yang dialami
+1. Pada beberapa soal kita perlu mencari cari terlebih dahulu pada file apa yang dapat sekiranya mengarah ke jawaban yang diminta oleh soal baru menggunakan perintah yang cocok bisa menampilkan yang diminta.
