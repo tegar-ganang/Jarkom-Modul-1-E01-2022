@@ -168,6 +168,27 @@ kemudian kita pencet analyze->follow->tcp stream yang kemudian memanggil dengan 
 
 ---
 
+## Soal 9 :
+
+---
+
+Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.
+
+## Jawaban Soal 9 :
+
+---
+
+Untuk mencari paket yang dimaksud kita menggunakan display filter dengan perintah `tcp.srcport == 9002` sesuai dengan yang sudah ditemukan pada soal no 8.
+Setelah itu cari paket yang dicari dengan display filter dengan perintah `tcp.stream eq 29`
+
+![Foto](./img/9a.png)
+
+setelah itu klik kanan dan pilih follow to tcp, setelah keluar kode, pilih format raw. Setelah itu simpan file dengan nama **E01.des3**
+
+![Foto](./img/9b.png)
+
+---
+
 ## Soal 10 :
 
 ---
