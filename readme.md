@@ -69,10 +69,11 @@ Judul TA yang dibuka adalah **Evaluasi unjuk kerja User Space Filesystem FUSE** 
 
 a. ip.addr == 192.168.0.27 && http
 
-![Foto](./img/2.png)
+![Foto](./img/2a.png)
+![Foto](./img/2b.png)
 
 b. ip.addr == 192.168.0.27 && http.request.uri contains "detailTopik"
-
+![Foto](./img/2c.png)
 ---
 
 ## Soal 3 :
@@ -110,6 +111,21 @@ Menggunakan display filter dengan perintah `tcp.srcport ==21`
 ![Foto](./img/4.png)
 
 ---
+## Soal 5 :
+
+---
+
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
+
+## Jawaban Soal 5 :
+
+---
+
+Menggunakan display filter dengan perintah `tcp.srcport == 443`
+
+![Foto](./img/5.png)
+
+---
 
 ## Soal 7 :
 
@@ -132,6 +148,23 @@ Langkah-langkah :
 3. Setelah berhasil tersambung, display filter dengan menggunakan perintah `ip.src==10.8.108.166`
 
 ![Foto](./img/7b.png)
+
+---
+## Soal 8 :
+
+---
+
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+## Jawaban Soal 8 :
+
+---
+
+kita lakukan filter pada wireshark sehingga hanya mengambil tcp yang berisi jawaban dengan menggunakan perintah `tcp contains "jawaban"`
+![Foto](./img/8a.png)
+
+kemudian kita pencet analyze->follow->tcp stream yang kemudian memanggil dengan perintah `tcp.stream eq 12` dan kita dapat hasilnya
+![Foto](./img/8b.png)
 
 ---
 
