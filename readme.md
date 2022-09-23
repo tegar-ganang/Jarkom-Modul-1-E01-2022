@@ -187,6 +187,21 @@ kemudian kita pencet analyze->follow->tcp stream yang kemudian memanggil dengan 
 
 ---
 
+## Jawaban Soal 9 :
+
+---
+
+Untuk mencari paket yang dimaksud kita menggunakan display filter dengan perintah `tcp.srcport == 9002` sesuai dengan kode yang sudah ditemukan pada soal no 8.
+Setelah itu cari paket yang dicari dengan display filter dengan perintah `tcp.stream eq 29`
+
+![Foto](./img/9a.png)
+
+setelah itu klik kanan dan pilih follow to tcp, setelah keluar kode, pilih format raw. Setelah itu simpan file dengan nama **E01.des3**
+
+![Foto](./img/9b.png)
+
+---
+
 ## Soal 10 :
 
 ---
