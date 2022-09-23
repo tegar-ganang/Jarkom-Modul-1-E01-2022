@@ -80,17 +80,15 @@ b. ip.addr == 192.168.0.27 && http.request.uri contains "detailTopik"
 
 ---
 
-Ikuti `perintah di basic.ichimarumaru.tech`! **Username dan password** bisa didapatkan dari `file .pcapng`!
+Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
 
 ## Jawaban Soal 3 :
 
 ---
 
-Ketik **http.host contains "basic.ichimarumaru.tech"** di `display filter` wireshark
+Menggunakan display filter dengan perintah `tcp.dstport ==80`
 
-![Foto](./img/3.png)
-
-Lalu kita mengisi pertanyaan di web `basic.ichimarumaru.tech` sebagaimana jawaban juga terlampir
+![Foto](./img/3a.png)
 
 ![Foto](./img/3b.png)
 
